@@ -15,3 +15,4 @@ for (const naf of nafs) for (const cp of cps) for (let p = 1; p <= 5; p++) {
 }
 console.log(rows.length - 1, "entreprises gardées");
 console.log(rows.map(r => r.map(c => `"${(c ?? "").replace(/"/g,'""')}"`).join(",")).join("\n"));
+copy(rows.map(r => r.map(c => `"${(c ?? "").replace(/"/g,'""')}"`).join(",")).join("\n"));
